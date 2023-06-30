@@ -21,10 +21,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void initListeners() {
             binding.buttonNext.setOnClickListener(v -> {
-                Intent goTo = new Intent(this, SecondActivity.class);
+                Intent goTo = new Intent(MainActivity.this, SecondActivity.class);
                 startActivity(goTo);
-
-
             });
 
         }
